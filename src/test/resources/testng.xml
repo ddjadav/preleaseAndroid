@@ -3,7 +3,7 @@
 <suite name="Suite" parallel="tests">
 	<test name="Pixel3">
 		<parameter name="platformName" value="Android" />
-		<parameter name="udid" value="RZ8T408D5LH" />
+		<parameter name="udid" value="9a9a374c" />
 		<parameter name="deviceName" value="pixel_3a_API_30_x86" />
 		<parameter name="systemPort" value="10000" />
 		<parameter name="chromeDriverPort" value="11000" />

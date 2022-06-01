@@ -1,10 +1,11 @@
 
 Feature: validate login scenarios
 
+  @test
   Scenario: validate user need login when open property detail screen
     Given User is on home screen
     When User click on any property
-    Then User should navigate to sign in scren
+    Then User should navigate to sign in screen
 
 
 
