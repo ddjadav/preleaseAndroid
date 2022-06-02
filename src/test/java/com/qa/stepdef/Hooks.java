@@ -29,7 +29,7 @@ public class Hooks {
 
         new ServerManager().startServer();
         new DriverManager().initializeDriver();*/
-        new VideoManager().startRecording();
+//        new VideoManager().startRecording();
     }
 
     @After
@@ -39,7 +39,7 @@ public class Hooks {
             scenario.attach(screenshot, "image/png", scenario.getName());
         }
 
-        new VideoManager().stopRecording(scenario.getName());
+//        new VideoManager().stopRecording(scenario.getName());
 //        driver.resetApp();
 /*        DriverManager driverManager = new DriverManager();
         if(driverManager.getDriver() != null){

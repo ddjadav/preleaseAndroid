@@ -1,5 +1,6 @@
 package com.qa.stepdef;
 
+import com.qa.screens.HomeScreen;
 import com.qa.screens.LoginScreen;
 import com.qa.screens.ProductsScreen;
 import io.cucumber.java.en.Then;
@@ -31,5 +32,17 @@ public class LoginStepDef {
     @Then("^I should see Products page with title \"([^\"]*)\"$")
     public void iShouldSeeProductsPageWithTitle(String title) {
         Assert.assertEquals(new ProductsScreen().getTitle(), title);
+    }
+
+    @When("User click on any property")
+    public void userClickOnAnyProperty() throws InterruptedException {
+        new HomeScreen().tapToFirstTrendingProp();
+        Thread.sleep(3000);
+    }
+
+    @Then("User should navigate to sign in screen")
+    public void userShouldNavigateToSignInScreen() {
+        String title = "Sign In";
+        Assert.assertEquals(new LoginScreen().getTitle(),title);
     }
 }

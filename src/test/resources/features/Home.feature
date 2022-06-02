@@ -23,7 +23,6 @@ Feature: Validate home page feature
     When User select "Vadodara" from city dropdown
     Then User should get list of property of that city
 
-  @test
   Scenario: validate user can search property with tenant type
     Given User is on Filter page
     When User select "E-commerce" from tenant type dropdown

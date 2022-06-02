@@ -16,6 +16,17 @@ Technologies/Tools used in building the framework
 - JSON - Test Data
 - XML - Static text
 
+Configration
+=============
+- set your app params in config file
+- Use test ng suite for parameter input
+- input device id and platform
+- run maven command as below
+- for manual run MyRunnerTest runner
+- set global parameter for run test in intellij
+
+
+
 Compile Build or Run Tests
 ==========================
 

@@ -17,6 +17,10 @@ public class HomeScreen extends BaseScreen{
     @iOSXCUITFindBy(id = "Search")
     private MobileElement searchTxtFld;
 
+    @AndroidFindBy(xpath = "//android.widget.ScrollView/android.view.ViewGroup/android.widget.HorizontalScrollView[2]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup")
+    @iOSXCUITFindBy(xpath = "")
+    private MobileElement firstTrendingCity;
+
     public String getTitle(){
         return getText(screenTitleLbl,"Title is: ");
     }
@@ -24,5 +28,9 @@ public class HomeScreen extends BaseScreen{
     public FilterScreen tapSearchField() {
         click(searchTxtFld, "press login button");
         return new FilterScreen();
+    }
+
+    public void tapToFirstTrendingProp(){
+        click(firstTrendingCity,"First trending property clicked");
     }
 }
