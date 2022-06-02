@@ -18,7 +18,7 @@ Technologies/Tools used in building the framework
 
 Configration
 =============
-- set your app parms in config file
+- set your app params in config file
 - Use test ng suite for parameter input
 - input device id and platform
 - run maven command as below
